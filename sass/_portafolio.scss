@@ -1,0 +1,51 @@
+/* --------Variables --------- */
+$color-principal : #000;
+$color-secundario : #fff;
+
+/* ---------------------- PORTAFOLIO --------------------------*/
+
+.portfolio-inner {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+}
+
+.portfolio-inner {
+  img {
+    transition: 0.5s;
+  }
+}
+
+.portfolio-inner:hover {
+  img {
+    transform: scale(1.1);
+  }
+}
+
+.portfolio-inner {
+  .portfolio-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #262626e3;
+    color: $color-secundario;
+    font-size: 1.6rem;
+  }
+}
+
+.portfolio-text {
+  h5 {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.portfolio-inner:hover {
+  .portfolio-text {
+    bottom: 0;
+    opacity: 1;
+  }
+}
